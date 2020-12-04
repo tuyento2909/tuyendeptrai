@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Sanca</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat|Roboto+Slab:300'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/flickity/2.0.5/flickity.min.css'><link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="./style_03.css">
+	<link rel="stylesheet" href="./style_05.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="header">
+    <div class="logo">
+      <a href="index.html" class="logo">
+				<img src="images/Logo.png" alt="">
+			</a>
+    </div>
+    <div class="menus text-right">
+      <span class="toggleBtn">
+        <i class="fa fa-bars"></i>
+        <i class="fa fa-times hiddenDiv"></i>
+      </span>
+      <div class="myMenu hideMenu">
+        <ul class="mainUl">
+          <li>
+            <a href="index.html" class="ddMenu">Home</a>
+          </li>
+          <li>
+            <a href="Home_02.html" class="active ddMenu">Gallery</a>
+            
+          </li>
+          <li>
+            <a href="Home_04.1.html" class="ddMenu">Accout</a>
+          </li>
+          <li>
+            <a href="Home_05.html" class="ddMenu">Cart</a>
+          </li>
+		  <li>
+            <a href="#" class="ddMenu">App</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+<div class="external">
+<h1>Shopping Cart</h1>
+
+<div class="shopping-cart">
+
+  <div class="column-labels">
+    <label class="product-image">Image</label>
+    <label class="product-details">Product</label>
+    <label class="product-price">Price</label>
+    <label class="product-quantity">Quantity</label>
+    <label class="product-removal">Remove</label>
+    <label class="product-line-price">Total</label>
+  </div>
+
+  <div class="product">
+    <div class="product-image">
+      <img src="images/betta fish.png">
+    </div>
+    <div class="product-details">
+      <div class="product-title">Dingo Dog Bones</div>
+      <p class="product-description">The best dog bones of all time. Holy crap. Your dog will be begging for these things! I got curious once and ate one myself. I'm a fan.</p>
+    </div>
+    <div class="product-price">12.99</div>
+    <div class="product-quantity">
+      <input type="number" value="2" min="1">
+    </div>
+    <div class="product-removal">
+      <button class="remove-product">
+        Remove
+      </button>
+    </div>
+    <div class="product-line-price">25.98</div>
+  </div>
+
+  <div class="product">
+    <div class="product-image">
+      <img src="images/ca vang copy.png">
+    </div>
+    <div class="product-details">
+      <div class="product-title">Nutro™ Adult Lamb and Rice Dog Food</div>
+      <p class="product-description">Who doesn't like lamb and rice? We've all hit the halal cart at 3am while quasi-blackout after a night of binge drinking in Manhattan. Now it's your dog's turn!</p>
+    </div>
+    <div class="product-price">45.99</div>
+    <div class="product-quantity">
+      <input type="number" value="1" min="1">
+    </div>
+    <div class="product-removal">
+      <button class="remove-product">
+        Remove
+      </button>
+    </div>
+    <div class="product-line-price">45.99</div>
+  </div>
+
+  <div class="totals">
+	
+	
+	
+	        <input type="text" name="coupon code" placeholder="Coupon Code">
+	        <button type="submit" class="round-black-btn">Apply Coupon</button>
+
+	                 
+	  
+    <div class="totals-item">
+      <label>Subtotal</label>
+      <div class="totals-value" id="cart-subtotal">71.97</div>
+    </div>
+    <div class="totals-item">
+      <label>Tax (5%)</label>
+      <div class="totals-value" id="cart-tax">3.60</div>
+    </div>
+    <div class="totals-item">
+      <label>Shipping</label>
+      <div class="totals-value" id="cart-shipping">15.00</div>
+    </div>
+    <div class="totals-item totals-item-total">
+      <label>Grand Total</label>
+      <div class="totals-value" id="cart-total">90.57</div>
+    </div>
+  </div>
+      
+      <button class="checkout">Checkout</button>
+
+</div>
+</div>	
+	
+<div class="footer">
+    <div class="social-wrapper">
+      <ul>
+        <li>
+			<a href="https://twitter.com/" title="Follow us on Twitter" target="_blank">
+				<i class="fa fa-twitter"></i>
+                <p class="hidden-lg-up">Twitter</p>
+			</a>
+		</li>
+        <li>
+			<a href="https://www.facebook.com/" title="Follow us on Facbook" target="_blank">
+				<i class="fa fa-facebook-square"></i>
+                <p class="hidden-lg-up">Facebook</p>
+			</a>
+		</li>
+		<li>
+			<a href="https://www.instagram.com/" title="Follow us on Instagram" target="_blank">
+				<i class="fa fa-instagram"></i>
+                <p class="hidden-lg-up">Instagram</p>
+			</a>
+		</li>
+      </ul>
+    </div>
+</div>
+<!-- partial -->
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script><script  src="./script_01.js"></script>
+	
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/flickity/2.0.5/flickity.pkgd.min.js'></script><script  src="./script.js"></script>
+
+  <script  src="./script_03.js"></script>
+	<script  src="./script_05.js"></script>
+   	
+  <script>
+    
+
+    TweenMax.from(".logo", 1, {
+      opacity: 0,
+      x: -20,
+      ease: Expo.easeInOut
+    })
+
+	TweenMax.from(".social-wrapper", 1, {
+      opacity: 0,
+      x: -20,
+      ease: Expo.easeInOut
+    })    
+	  
+    TweenMax.staggerFrom(".myMenu .mainUl li", 1, {
+      opacity: 0,
+      x: -20,
+      ease: Power3.easeInOut
+    }, 0.08)
+
+    TweenMax.from(".search", 1, {
+      delay: .5,
+      opacity: 0,
+      x: -20,
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.from(".account", 1, {
+      delay: .6,
+      opacity: 0,
+      x: -20,
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.from(".cart", 1, {
+      delay: .7,
+      opacity: 0,
+      x: -20,
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.from(".frame", 1, {
+      delay: 0.5,
+      opacity: 0,
+      y: 800,
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.from(".leaves .layer:nth-child(1)", 2, {
+      delay: 2,
+      opacity: 0,
+      y: -800,
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.from(".leaves .layer:nth-child(2)", 2, {
+      delay: 2.1,
+      opacity: 0,
+      y: -800,
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.from(".leaves .layer:nth-child(3)", 2, {
+      delay: 2.2,
+      opacity: 0,
+      y: -800,
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.from(".leaves .layer:nth-child(4)", 2, {
+      delay: 2.3,
+      opacity: 0,
+      y: -800,
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.from(".leaves .layer:nth-child(5)", 2, {
+      delay: 2.5,
+      opacity: 0,
+      y: -800,
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.from(".title", 1, {
+      delay: 1,
+      opacity: 0,
+      y: 20,
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.from(".tagline", 1, {
+      delay: 1.3,
+      opacity: 0,
+      y: 20,
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.from(".pages", 1, {
+      delay: 1.3,
+      opacity: 0,
+      y: 20,
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.from(".more", 1, {
+      delay: 1.4,
+      opacity: 0,
+      y: 20,
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.from(".desc", 1, {
+      delay: 1.4,
+      opacity: 0,
+      y: 20,
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.from(".arrows", 1, {
+      delay: 2,
+      opacity: 0,
+      ease: Expo.easeInOut
+    })
+
+  </script>
+</body>
+</html>
